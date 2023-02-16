@@ -1,56 +1,68 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-image: url("../img/background-universe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .title {
-    margin-top: 15px;
-    font-size: 26px;
-    font-weight: bold;
-    text-align: center;
+  margin-top: 15px;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffff;
 }
 .form-search {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 .form-search input {
-    padding: 5px;
-    width: 300px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+  padding: 5px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 .form-search button {
-    padding: 5px;
+  padding: 5px;
 }
 
 .lista {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 100px;
 }
 
 .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    padding: 10px;
-    border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border-radius: 5px;
 }
 .item h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.item img {
+  border-radius: 10px;
+}
+.item img:hover {
+  border-radius: 50%;
 }
 
 .item:hover {
-    background-color: #121212;
-    color: #ffff;
+  background-color: #ffff;
+  color: #121211;
 }
