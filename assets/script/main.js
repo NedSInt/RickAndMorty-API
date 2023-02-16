@@ -24,7 +24,7 @@ const carregaLista = (json) => {
     let item = document.createElement("div");
     item.classList.add("item");
 
-    item.innerHTML = `<img src = "${element.image}" /><div class="items"><h2>${element.name}</h2><p>Location: ${element.location.name}</p><p>Species: ${element.species}</p><p>Status: ${element.status}</p></div>`;
+    item.innerHTML = `<img src = "${element.image}" /><h2>${element.name}</h2>`;
 
     lista.appendChild(item);
   });
