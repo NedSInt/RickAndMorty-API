@@ -1,19 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
 }
-body {
-  background-image: url("../img/background-universe.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+.logo {
+  width: 100px;
+  height: 100px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+nav ul li {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #64bc46;
+}
+
 .title {
   margin-top: 15px;
   font-size: 26px;
   font-weight: bold;
   text-align: center;
-  color: #ffff;
 }
 .form-search {
   margin-top: 15px;
@@ -26,43 +45,57 @@ body {
   padding: 5px;
   width: 300px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #64bc46;
 }
 
 .form-search button {
   padding: 5px;
+  background: #64bc46;
+  color: #ffff;
+  border: none;
+  border-radius: 3px;
 }
 
 .lista {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto;
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 100px;
+  background: #202329;
+  justify-content: center;
+  padding: 100px;
 }
 
 .item {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 15px;
-  padding: 10px;
   border-radius: 5px;
-}
-.item h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
+  background: rgb(60, 62, 68);
+  width: 43vw;
+  height: 300px;
 }
 .item img {
-  border-radius: 10px;
+  height: 100%;
+  border-radius: 5px;
 }
-.item img:hover {
-  border-radius: 50%;
+.content-text {
+  display: flex;
+  flex-direction: column;
+  color: #ffff;
+  gap: 60px;
 }
-
-.item:hover {
-  background-color: #ffff;
-  color: #121211;
+.content-text .nome {
+  font-size: 1.5rem;
+}
+.nome:hover {
+  color: #64bc46;
+}
+.content-text .location {
+  display: flex;
+  flex-direction: column;
+}
+.fixed {
+  color: #ccc;
 }
