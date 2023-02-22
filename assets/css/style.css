@@ -6,10 +6,15 @@
   font-family: "Poppins", sans-serif;
   list-style: none;
 }
+.main {
+  height: 50vh;
+}
+
 .header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 100px;
 }
 .logo {
   width: 100px;
@@ -27,7 +32,9 @@ nav ul li {
   font-weight: 700;
   color: #64bc46;
 }
-
+.apresentation {
+  margin-top: 100px;
+}
 .title {
   margin-top: 15px;
   font-size: 26px;
