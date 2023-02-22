@@ -88,6 +88,9 @@
   border-radius: 50%;
 }
 
+.lista:empty {
+    display: none;
+}
 .lista {
   display: grid;
   grid-template-columns: auto auto;
@@ -130,9 +133,6 @@
   .item {
     width: 100vw;
     gap: 0;
-  }
-  .item img {
-    height: 100px;
   }
   .content-text {
     gap: 0;
